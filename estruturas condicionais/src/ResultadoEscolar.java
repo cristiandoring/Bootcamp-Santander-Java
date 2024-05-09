@@ -20,6 +20,9 @@ public class ResultadoEscolar {
         if(media >= 7){
             System.out.println("APROVADO");
         }
+        else if (media >=5 && media <7){
+            System.out.println("EM RECUPERAÇÃO");
+        }
         else{
             System.out.println("REPROVADO");
         }
