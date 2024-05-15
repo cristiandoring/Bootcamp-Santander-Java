@@ -5,24 +5,24 @@ public class DebuggingJava {
         System.out.println("Finalizou o programa no método main");
     }
 
-    public void a(){
+    public static void a(){
         System.out.println("Entrou no método a.");
         b();
-        System.out.println("Finalizou no método a.");
+        System.out.println("Finalizou o método a.");
     }
 
-    public void b(){
+    public static void b(){
         System.out.println("Entrou no método b.");
 
         for(int i=0;i<=4;i++) System.out.println(i);
         c();
-        System.out.println("Finalizou no método b.");
+        System.out.println("Finalizou o método b.");
     }
 
-    public void c(){
+    public static void c(){
         System.out.println("Entrou no método c.");
         
-        System.out.println("Finalizou no método c.");
+        System.out.println("Finalizou o método c.");
     }
 
     
