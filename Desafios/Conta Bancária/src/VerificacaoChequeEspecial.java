@@ -13,11 +13,18 @@ public class VerificacaoChequeEspecial {
 
         // Verifica se o saque ultrapassa o saldo disponível
         if (saque <= saldo) {
-            // TODO: Imprimir "Transação realizada com sucesso."
+            
+            System.out.println("Transacao realizada com sucesso.");
         } else {
-            // TODO: Verificar se o saque ultrapassa o limite do cheque especial
-            // Em caso positivo, imprimir "Transacao realizada com sucesso utilizando o cheque especial."
-            // Caso contrário, imprimir "Transacao nao realizada. Limite do cheque especial excedido."
+
+            if(saque <= limiteChequeEspecial+saldo){
+                System.out.println("Transacao realizada com sucesso utilizando o cheque especial.");
+            }
+            
+            else{
+                System.out.println("Transacao nao realizada. Limite do cheque especial excedido.");
+            }
+            
         }
 
         // Fechar o scanner para evitar vazamentos de recursos
