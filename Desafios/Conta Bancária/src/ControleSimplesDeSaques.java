@@ -19,7 +19,8 @@ public class ControleSimplesDeSaques {
                 System.out.println("Limite diario de saque atingido. Transacoes encerradas.");
                 break; // Encerra o loop
             } else {
-                // TODO: Atualizar o limite diário e imprimir a saída no formato dos exemplos.
+               limiteDiario -= valorSaque;
+               System.out.println("Saque realizado. Limite restante: " + limiteDiario);
             }
         }
 
