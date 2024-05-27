@@ -20,11 +20,7 @@ public class Estabelecimento {
         Almoxarife almoxarife = new Almoxarife();
         //ações que não precisam estar disponíveis para toda a aplicação
         almoxarife.controlarEntrada();
-        almoxarife.controlarSaida();
-        almoxarife.entregarIngredientes();
-
-        //ações que somente o pacote cozinha precisa ter ciência
-        almoxarife.trocarGas();
+        almoxarife.controlarSaida();        
 
         Atendente atendente = new Atendente();
 
@@ -37,7 +33,8 @@ public class Estabelecimento {
         cliente.fazerPedido();
         
         //cliente não pode ouvir que o gás acabou
-        cozinheiro.pedirParaTrocarGás();
+        cozinheiro.pedirParaTrocarGás(atendente);
+        cozinheiro.pedirParaTrocarGás(cozinheiro);
 
     }
 }

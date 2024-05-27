@@ -9,11 +9,11 @@ public class Almoxarife {
         System.out.println("CONTROLANDO SAÍDA");
     }
 
-    public void entregarIngredientes(){
+    void entregarIngredientes(){
         System.out.println("ENTREGANDO INGREDIENTES");
     }
 
-    public void trocarGas(){
+    void trocarGas(){
         System.out.println("TROCANDO O GÁS");
     }
 }
