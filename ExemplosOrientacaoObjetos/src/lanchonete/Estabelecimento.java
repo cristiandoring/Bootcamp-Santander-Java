@@ -1,5 +1,8 @@
 package lanchonete;
 
+import lanchonete.atendimento.Atendente;
+import lanchonete.atendimento.Cozinheiro;
+
 public class Estabelecimento {
     public static void main(String[] args) {
         
@@ -21,8 +24,20 @@ public class Estabelecimento {
         almoxarife.entregarIngredientes();
 
         //ações que somente o pacote cozinha precisa ter ciência
-
         almoxarife.trocarGas();
+
+        Atendente atendente = new Atendente();
+
+        atendente.pegarLancheCozinha();
+        atendente.receberPagamento();
+        atendente.servindoMesa();
+
+        Cliente cliente = new Cliente();
+        cliente.escolherLanche();
+        cliente.fazerPedido();
+        
+        //cliente não pode ouvir que o gás acabou
+        cozinheiro.pedirParaTrocarGás();
 
     }
 }

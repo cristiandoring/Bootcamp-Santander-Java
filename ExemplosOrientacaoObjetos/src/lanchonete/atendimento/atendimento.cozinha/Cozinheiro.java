@@ -1,4 +1,4 @@
-package lanchonete;
+package lanchonete.atendimento;
 
 public class Cozinheiro {
     public void adicionarLancheNoBalcao(){
@@ -20,6 +20,10 @@ public class Cozinheiro {
 
     public void prepararVitamina(){
         System.out.println("PREPARANDO VITAMINA");
+    }
+
+    public void pedirParaTrocarGás(){
+        System.out.println("TROQUE O GÁS");
     }
 
 }
