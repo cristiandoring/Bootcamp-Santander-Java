@@ -1,6 +1,6 @@
 package veículos;
 
-public class Carro extends Veiculo {
+public class Carro extends Veiculo{
 
     public void ligar(){
         confereCambio();
