@@ -1,15 +1,7 @@
 package veículos;
 
-public class Carro {
-    private String chassi;
+public class Carro extends Veiculo {
 
-    public String getChassi(){
-        return chassi;
-    }
-
-    public void setChassi(String chassi){
-        this.chassi = chassi;
-    }
     public void ligar(){
         confereCambio();
         confereCombustivel();
