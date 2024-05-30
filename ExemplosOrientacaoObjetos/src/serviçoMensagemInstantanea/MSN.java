@@ -1,5 +1,5 @@
 package serviçoMensagemInstantanea;
 
-public class MSN {
+public class MSN extends ServicoMensagemInstantanea{
     
 }

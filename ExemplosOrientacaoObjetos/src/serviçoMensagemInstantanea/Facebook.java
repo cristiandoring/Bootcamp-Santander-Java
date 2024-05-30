@@ -1,5 +1,5 @@
 package serviçoMensagemInstantanea;
 
-public class Facebook {
+public class Facebook extends ServicoMensagemInstantanea {
     
 }
