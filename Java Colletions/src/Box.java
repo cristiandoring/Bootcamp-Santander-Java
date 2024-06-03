@@ -19,6 +19,10 @@ public class Box <T> {
     //<T> representa "Type" 
     private T t;
 
+    public static void main(String[] args) {
+        System.out.println("Java Colletions");
+    }
+
     public void set(T t){
         this.t = t;
     }
