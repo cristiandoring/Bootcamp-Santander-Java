@@ -10,5 +10,14 @@ public class ConsumerExample {
             }
         };
 
+    numeros.stream().forEach(new Consumer<Integer>(){
+
+    @Override
+    public void accept(Integer n){
+        if(n%2==0){
+            System.out.println(n);
+        }
+    }
+    });
     }
 }
