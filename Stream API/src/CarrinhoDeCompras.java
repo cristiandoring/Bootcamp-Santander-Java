@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+/*import java.util.ArrayList;
 public class CarrinhoDeCompras{
 
     //atributos
@@ -20,4 +20,4 @@ public class CarrinhoDeCompras{
             .sum();
     }
 
-}
+}*/
