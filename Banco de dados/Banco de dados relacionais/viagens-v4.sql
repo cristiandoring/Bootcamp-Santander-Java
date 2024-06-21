@@ -78,24 +78,8 @@ CREATE TABLE `usuarios` (
 --
 -- Extraindo dados da tabela `usuarios`
 --
+INSERT INTO usuarios_novos (id, nome, email, endereco, data_nascimento)
 
-INSERT INTO `usuarios` (`id`, `nome`, `email`, `endereco`, `data_nascimento`) VALUES
-(1, 'Cristian Doring Molon', 'cristian@gmail.com', 'Rua Imigrantes, 100 - Centro Garibaldi/RS', '1998-10-20'),
-(4, 'João Silva', 'joao@example.com', 'Rua A, 123, Cidade X, Estado Y', '1990-05-15'),
-(2, 'Maria Santos', 'maria@example.com', 'Rua B, 456, Cidade Y, Estado Z', '1985-08-22'),
-(3, 'Pedro Souza', 'pedro@example.com', 'Avenida C, 789, Cidade X, Estado Y', '1998-02-10');
+SELECT id, nome, email, endereco, data_nascimento FROM usuarios;
 
---
--- Índices para tabelas despejadas
---
-
---
--- Índices para tabela `usuarios`
---
-ALTER TABLE `usuarios`
-  ADD UNIQUE KEY `email` (`email`);
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+DROP TABLE usuarios;
