@@ -83,3 +83,7 @@ INSERT INTO usuarios_novos (id, nome, email, endereco, data_nascimento)
 SELECT id, nome, email, endereco, data_nascimento FROM usuarios;
 
 DROP TABLE usuarios;
+
+ALTER TABLE usuarios_novos RENAME usuarios;
+
+ALTER TABLE usuarios MODIFY COLUMN VARCHAR(250)
